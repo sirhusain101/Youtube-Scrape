@@ -3,7 +3,7 @@ from tabulate import tabulate
 import requests
 import json
 import os
-from video_ids import video_id_list   # Check comments in create_video_date_dict.py for more info
+from video_ids import video_id_list     # Check video_ids.py
 
 # Clears any text from Results.html, which was left after previous operation
 open("Results.html", "w", encoding="utf-8").close()
