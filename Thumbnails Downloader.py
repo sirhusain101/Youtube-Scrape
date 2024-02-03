@@ -1,6 +1,6 @@
 import urllib.request
 import os.path
-from video_ids import video_id_list
+from video_ids import video_id_list     # Check video_ids.py
 
 # Youtube thumbnails template = https://i.ytimg.com/vi/VIDEO-ID/hqdefault.jpg
 
