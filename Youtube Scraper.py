@@ -36,7 +36,7 @@ for index, id in enumerate(video_id_list):
     print("(" + str(index + 1) + "/" + str(len(video_id_list)) + ") | Scraping: https://www.youtube.com/watch?v=" + id)
 
     # Sends request for scraping
-    soup = BeautifulSoup(requests.get("https://www.youtube.com/watch?v=" + id).content, "lxml")
+    soup = BeautifulSoup(requests.get("https://www.youtube.com/watch?v=" + id).text, "lxml")
 
     # Scrapes date | https://www.youtube.com/watch?v=XVv6mJpFOb0
     date = soup.find('meta', itemprop="datePublished")['content']
